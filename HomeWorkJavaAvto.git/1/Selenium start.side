@@ -1,0 +1,139 @@
+{
+  "id": "4baeab7b-199c-4e3e-8214-cf5f3e2b12bf",
+  "version": "2.0",
+  "name": "Selenium start",
+  "url": "https://argoclassic.ru",
+  "tests": [{
+    "id": "47710c8b-5d86-4c63-ae2e-08e8f1278a71",
+    "name": "Untitled",
+    "commands": [{
+      "id": "63b67e53-00e3-4fb4-8c26-bb5729e8b033",
+      "comment": "",
+      "command": "open",
+      "target": "/account/orders",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19746e8a-7df9-4691-9c82-07c489825600",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20ea457e-128f-449a-8ee9-e426bee52e4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.catalog-menu__item:nth-child(1) > .catalog-menu__link",
+      "targets": [
+        ["css=.catalog-menu__item:nth-child(1) > .catalog-menu__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Новинки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/novinki')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1e26d16-2d75-48e6-b90c-739c5d72e0b5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Куртка J.402",
+      "targets": [
+        ["linkText=Куртка J.402", "linkText"],
+        ["css=.listing-card:nth-child(2) .lc-name > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Куртка J.402')]", "xpath:link"],
+        ["xpath=//div[@id='center-part']/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/catalog/zhenshhini/kurtki/kurtka-J-402-kakao')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73ac3f32-5c35-42b1-bee9-8b692878dfed",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Куртка J.402",
+      "targets": [
+        ["linkText=Куртка J.402", "linkText"],
+        ["css=.listing-card:nth-child(2) .lc-name > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Куртка J.402')]", "xpath:link"],
+        ["xpath=//div[@id='center-part']/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/catalog/zhenshhini/kurtki/kurtka-J-402-kakao')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6069cfe-1a26-472e-b8b6-5b030646df28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.listing-card:nth-child(2) .lc-image img",
+      "targets": [
+        ["css=.listing-card:nth-child(2) .lc-image img", "css:finder"],
+        ["xpath=//img[@alt='Куртка J.402']", "xpath:img"],
+        ["xpath=//div[@id='center-part']/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36f26a68-782c-4e74-b4f8-837c68d4a869",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-colors-item:nth-child(2) > .card-colors-image",
+      "targets": [
+        ["css=.card-colors-item:nth-child(2) > .card-colors-image", "css:finder"],
+        ["xpath=//div[@id='center-part']/div/div[2]/div[2]/div/div[3]/div[2]/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/catalog/zhenshhini/kurtki/kurtka-J-402-t-vishnja')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03931f64-d97f-48a5-a4a6-4b54ec91704c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-12:nth-child(1) .plus",
+      "targets": [
+        ["css=.col-12:nth-child(1) .plus", "css:finder"],
+        ["xpath=//div[@id='center-part']/div/div[2]/div[2]/div/div[5]/div/div[2]/div/div/div/div[3]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[3]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a949d25a-27fb-4136-95c3-77dcd6e92663",
+      "comment": "",
+      "command": "click",
+      "target": "css=.to-cart-list",
+      "targets": [
+        ["css=.to-cart-list", "css:finder"],
+        ["xpath=//div[@id='center-part']/div/div[2]/div[2]/div/div[5]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'В корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65dd361f-dc40-4800-8b48-c7d42618ee74",
+      "comment": "",
+      "command": "click",
+      "target": "id=cart-popup-go",
+      "targets": [
+        ["id=cart-popup-go", "id"],
+        ["linkText=Перейти к заказу", "linkText"],
+        ["css=#cart-popup-go", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти к заказу')]", "xpath:link"],
+        ["xpath=//a[@id='cart-popup-go']", "xpath:attributes"],
+        ["xpath=//div[@id='cartPopup']/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//div[6]/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти к заказу')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "570e8893-c8f2-4834-abd9-9ec3de01ccfd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["47710c8b-5d86-4c63-ae2e-08e8f1278a71"]
+  }],
+  "urls": ["https://argoclassic.ru/"],
+  "plugins": []
+}
