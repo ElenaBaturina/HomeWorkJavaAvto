@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.Random;
+//import java.util.Random;
 
 public class ArgoTest {
     public static void main(String[] args) throws InterruptedException {
@@ -32,6 +32,7 @@ public class ArgoTest {
         driver.findElement(By.xpath("//input[@name=\"Good[3519][14282]\" and @data-good_id=\"3519\"]")).sendKeys("1"); // выбор размера
         Thread.sleep(2000);
         driver.findElement(By.xpath("//span[@data-empty=\"В корзину\"]")).click(); //добавиление в корзину
+
         driver.navigate().refresh();
         driver.findElement(By.xpath("//*[@id=\"cartModule\"]/div[1]/div[2]/i")).click(); // корзина
         Thread.sleep(1000);
@@ -43,6 +44,7 @@ public class ArgoTest {
         driver.findElement(By.xpath("//i[@class=\"far fa-user\"]")).click(); //переход в лк
         Thread.sleep(1000);
         driver.findElement(By.xpath("//a[@href=\"/account?auth_logout=true\"]")).click(); //выход из лк
+
         Thread.sleep(5000);
 
         driver.quit();
