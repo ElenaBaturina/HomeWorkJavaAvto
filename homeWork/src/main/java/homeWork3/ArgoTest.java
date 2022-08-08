@@ -23,6 +23,11 @@ public class ArgoTest {
         driver.navigate().refresh();
         driver.findElement(By.xpath("//div/span/i[@class=\"fas fa-bars\"]")).click(); //меню
         Thread.sleep(2000);
+
+
+        // замените все Thread.sleep(2000); на webDriverWait в 5 дз
+
+
         driver.findElement(By.xpath("//a[@class=\"menu-list__link \" and @href=\"/novinki\"]")).click(); //новинки
         Thread.sleep(2000);
         driver.findElement(By.xpath("//img[@src=\"/timthumb.php?src=/uploads/gallery/db/db4c9899727cdfcb3b259ef992f51e99.jpg&w=422&h=458&zc=1\"]")).click(); //выбор куртки
