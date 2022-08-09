@@ -23,7 +23,7 @@ public class homeWork4Test {
 
     @Test
     void assertExample() throws Exception {
-        assertThat(homeWork4.areaTriangle(10,10,10)).isPositive();
+        assertThat(homeWork4.areaTriangle(10, 10, 10)).isPositive();
 
         logger.info("positive test");
 
