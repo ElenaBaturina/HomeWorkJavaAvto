@@ -21,7 +21,7 @@ public class MainMenuBlock extends BasePage {
                 .perform();
         webDriverWait.until(ExpectedConditions.visibilityOf(goMainPage));
         goMainPage.click();
-        //return new TransitionMenCollection(driver);
+
     }
 
     @FindBy(xpath = "//li[@class=\"menu-list__item menu-list__item--header\"]//a[@href=\"/novinki\"]")

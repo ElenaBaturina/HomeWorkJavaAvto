@@ -1,5 +1,6 @@
 package homWork6;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -21,5 +22,8 @@ public class SizeChart extends BasePage{
                 By.xpath("/html/body/footer/div/div[1]/div[1]/div")));
         webDriverWait.until(ExpectedConditions.visibilityOf(sizeChart));
         sizeChart.click();
+        Assertions.assertEquals(driver.findElement(By.xpath("//*[@id=\"center-part\"]//h1")).isDisplayed(),true);
+        driver.findElement(
+                By.xpath("//*[@id=\"center-part\"]//h1")).click();
     }
 }

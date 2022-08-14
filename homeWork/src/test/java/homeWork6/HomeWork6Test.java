@@ -48,10 +48,6 @@ public class HomeWork6Test {
     @Test
     void menSizeChartTest() {
         new SizeChart(driver).clickSizeChart();
-        Assertions.assertEquals(driver.findElement(By.xpath("//*[@id=\"center-part\"]//h1")).isDisplayed(),true);
-        driver.findElement(
-                By.xpath("//*[@id=\"center-part\"]//h1")).click();
-
     }
 
     @AfterEach
