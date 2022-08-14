@@ -5,8 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.Random;
+import java.time.Instant;
+
+//import java.util.Random;
 
 public class ArgoTest {
     public static void main(String[] args) throws InterruptedException {
@@ -23,6 +26,11 @@ public class ArgoTest {
         driver.navigate().refresh();
         driver.findElement(By.xpath("//div/span/i[@class=\"fas fa-bars\"]")).click(); //меню
         Thread.sleep(2000);
+
+
+        // замените все Thread.sleep(2000); на webDriverWait в 5 дз
+
+
         driver.findElement(By.xpath("//a[@class=\"menu-list__link \" and @href=\"/novinki\"]")).click(); //новинки
         Thread.sleep(2000);
         driver.findElement(By.xpath("//img[@src=\"/timthumb.php?src=/uploads/gallery/db/db4c9899727cdfcb3b259ef992f51e99.jpg&w=422&h=458&zc=1\"]")).click(); //выбор куртки
@@ -32,6 +40,7 @@ public class ArgoTest {
         driver.findElement(By.xpath("//input[@name=\"Good[3519][14282]\" and @data-good_id=\"3519\"]")).sendKeys("1"); // выбор размера
         Thread.sleep(2000);
         driver.findElement(By.xpath("//span[@data-empty=\"В корзину\"]")).click(); //добавиление в корзину
+
         driver.navigate().refresh();
         driver.findElement(By.xpath("//*[@id=\"cartModule\"]/div[1]/div[2]/i")).click(); // корзина
         Thread.sleep(1000);
@@ -43,6 +52,7 @@ public class ArgoTest {
         driver.findElement(By.xpath("//i[@class=\"far fa-user\"]")).click(); //переход в лк
         Thread.sleep(1000);
         driver.findElement(By.xpath("//a[@href=\"/account?auth_logout=true\"]")).click(); //выход из лк
+
         Thread.sleep(5000);
 
         driver.quit();
