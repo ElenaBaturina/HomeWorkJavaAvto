@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Aug 15 15:54:51 MSK 2022","Mon Aug 15 15:55:04 MSK 2022","13600","","homeWork6.HomeWork6Test","","homeWork6.HomeWork6Test","addingAnItemToTheCartTest","Проверка добавление товара в корзину",""
+"passed","Mon Aug 15 15:55:05 MSK 2022","Mon Aug 15 15:55:11 MSK 2022","5894","","homeWork6.HomeWork6Test","","homeWork6.HomeWork6Test","menSizeChartTest","Проверка отображение Таблицы мужских размеров",""
+"passed","Mon Aug 15 15:55:11 MSK 2022","Mon Aug 15 15:55:19 MSK 2022","8650","","homeWork6.HomeWork6Test","","homeWork6.HomeWork6Test","cleaningTheTrashTest","Проверка очистку корзины",""

@@ -1,5 +1,6 @@
 package homWork6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,8 +25,8 @@ public class LoginPage extends BasePage {
     private WebElement signInButton;
 
     //главная страница
+    @Step("Клик на кнопку Кабинет")
     public MainPage login(String login, String password) {
-        //webDriverWait.until(ExpectedConditions.visibilityOf(emailField));
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id(emailIdLocator)));
         emailField.sendKeys(login);
         passwordField.sendKeys(password);

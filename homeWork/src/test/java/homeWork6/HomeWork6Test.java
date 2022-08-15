@@ -3,7 +3,6 @@ package homeWork6;
 import homWork6.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -22,6 +21,7 @@ public class HomeWork6Test {
     }
 
     @Test
+    @DisplayName("Проверка добавление товара в корзину")
     void addingAnItemToTheCartTest() {
         new MainPage(driver).clickSingInButton()
                 .login("LIABaturina@yandex.ru", "leonteva");
@@ -34,6 +34,7 @@ public class HomeWork6Test {
     }
 
     @Test
+    @DisplayName("Проверка очистки корзины")
     void cleaningTheTrashTest() {
         new MainPage(driver).clickSingInButton()
                 .login("LIABaturina@yandex.ru", "leonteva");
@@ -46,6 +47,7 @@ public class HomeWork6Test {
     }
 
     @Test
+    @DisplayName("Проверка отображение Таблицы мужских размеров")
     void menSizeChartTest() {
         new SizeChart(driver).clickSizeChart();
     }
